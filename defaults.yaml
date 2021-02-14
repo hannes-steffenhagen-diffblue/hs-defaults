@@ -1,0 +1,26 @@
+# Language extensions that should be turned on by default in each source file
+# These are things that are either tiny utilities that would be too much of a
+# hassle to turn on individually (like TypeApplications, ViewPatterns or MultiWayIf) or pretty
+# much are arguably "bugfixes" (like ScopedTypeVariables and NegativeLiterals which basically just
+# change the behaviour to what most people would expect anyway).
+#
+# Note: I use pretty much the same list across all my projects, this doesn't
+# necessarily mean that all of these are actually being used here!
+default-extensions:
+- BangPatterns
+- FlexibleContexts
+- BinaryLiterals
+- EmptyDataDecls
+- GADTs
+- LambdaCase
+- MultiParamTypeClasses
+- MultiWayIf
+- NegativeLiterals
+- OverloadedStrings # probably the most disruptive in this list
+- PatternSynonyms
+- RankNTypes
+- ScopedTypeVariables
+- TupleSections
+- ViewPatterns
+- TypeApplications
+- TypeFamilies
